@@ -1,0 +1,11 @@
+version = 1
+
+[[annotations]]
+path = ["scripts/**", "docker/**", "hf/**", "CITATION.cff", "REUSE.toml"]
+SPDX-FileCopyrightText = "2026 Josh Pearlman"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["README.md", "docs/**", "results/**"]
+SPDX-FileCopyrightText = "2026 Josh Pearlman"
+SPDX-License-Identifier = "CC-BY-4.0"

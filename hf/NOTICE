@@ -1,0 +1,20 @@
+Beam-1.0-501B-A23B-NVFP4-TP3
+
+This is a modified version of Beam-1.0-501B-A23B-NVFP4 by Reflection AI
+(https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4, revision 3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086),
+licensed under the Apache License, Version 2.0. A copy of the licence is in LICENSE.
+
+Modifications (Apache-2.0 section 4(b)), made on 2026-10-19 by Josh Pearlman with pad_beam_tp3_v0_1_0.py
+(SHA-256 8a66067ee51f25b106be593245ddd1e4ce721b9e7ef54841a97dc0553c53929c):
+- All 53 model-*.safetensors shards rewritten. In them, zeros were appended to the attention query, key, value, output-gate and
+  output-projection tensors and the per-head gate bias (48->54 query heads, 8->9 key-value heads), to the dense
+  feed-forward tensors of layers 0-2 (20480->20736), and to every routed expert's NVFP4 weights and FP8 block
+  scales (2560->2688); other tensors were copied unchanged. No original value was changed. Each shard also records the modification in its
+  safetensors metadata ("tp3_padder": "0.1.0").
+- config.json: num_attention_heads, num_key_value_heads, intermediate_size and moe_intermediate_size updated.
+- model.safetensors.index.json: total_size updated.
+- Replaced: README.md is this repository's model card. Reflection's original model card is kept unchanged as
+  README_reflection.md.
+- Added: PADDING_MANIFEST.json, SHA256SUMS, NOTICE. SHA256SUMS lists the 64 files produced by the padding step,
+  with Reflection's original model card under its new name, README_reflection.md.
+All other files are copied unchanged from the source revision.

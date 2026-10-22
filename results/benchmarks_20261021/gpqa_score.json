@@ -1,0 +1,37 @@
+{
+  "benchmark": "gpqa",
+  "pubbench": "1.0.5",
+  "scored_at": "2026-10-21T16:59:33-0400",
+  "model": "beam",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.99
+  },
+  "primary_cap": 32768,
+  "rerun_cap": null,
+  "rerun_rounds": {},
+  "caps_in_use": [
+    32768
+  ],
+  "responses": 198,
+  "missing": 0,
+  "cut_off": 2,
+  "cut_off_with_partial_text": 0,
+  "scores": {
+    "main": {
+      "correct": 178,
+      "total": 198,
+      "percent": 89.9,
+      "wilson95": [
+        84.91,
+        93.37
+      ],
+      "reference": {
+        "source": "Reflection, NVFP4 model card",
+        "percent": 89.3
+      },
+      "consistent": true
+    }
+  },
+  "dataset_sha256": "41d1213cd7a4998605a26c2798500652572007161b3a92817ba46b35befcd305"
+}

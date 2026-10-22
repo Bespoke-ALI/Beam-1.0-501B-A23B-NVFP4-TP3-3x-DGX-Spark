@@ -1,0 +1,38 @@
+{
+  "benchmark": "humaneval",
+  "pubbench": "1.0.5",
+  "scored_at": "2026-10-21T16:59:30-0400",
+  "model": "beam",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.99
+  },
+  "primary_cap": 16384,
+  "rerun_cap": null,
+  "rerun_rounds": {},
+  "caps_in_use": [
+    16384
+  ],
+  "responses": 164,
+  "missing": 0,
+  "cut_off": 0,
+  "cut_off_with_partial_text": 0,
+  "container_image": "python@sha256:401f6e1a67dad31a1bd78e9ad22d0ee0a3b52154e6bd30e90be696bb6a3d7461",
+  "scores": {
+    "main": {
+      "correct": 161,
+      "total": 164,
+      "percent": 98.17,
+      "wilson95": [
+        94.76,
+        99.38
+      ],
+      "reference": {
+        "source": "diffbot EXL3 3bpw card",
+        "percent": 97.6
+      },
+      "consistent": true
+    }
+  },
+  "dataset_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef"
+}

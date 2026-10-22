@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this recipe or the padder, please cite it as below. Please also cite Reflection's Beam (see README)."
+title: "Beam-1.0 501B on three DGX Sparks at TP=3"
+abstract: "Offline zero-padding of Reflection's Beam-1.0-501B-A23B NVFP4 checkpoint so it serves at tensor parallelism 3 on a stock vLLM image across a switchless three-node DGX Spark ring, with an equivalence proof and byte-level verification."
+authors:
+  - family-names: Pearlman
+    given-names: Josh
+type: software
+version: 1.0.0
+date-released: "2026-10-21"
+license: Apache-2.0
+repository-code: "https://github.com/Bespoke-ALI/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark"
+keywords: [vllm, dgx-spark, gb10, tensor-parallelism, nvfp4, beam, reflection]
+references:
+  - type: blog
+    title: "Introducing Beam: Reflection's 501B open-weight model"
+    authors:
+      - name: Reflection
+    year: 2026
+    url: "https://reflection.ai/blog/introducing-beam"
